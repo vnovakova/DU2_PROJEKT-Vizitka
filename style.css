@@ -1,16 +1,110 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
-
-/*
-BARVY:
-šedá na pozadí stránky:		 #b2bec3
-červená na hlavní nadpis:  #d63031
-
-tlačítko Twitter:					 #1da1f2
-tlačítko Twitter aktivní:	 #0b7bc1
-
-tlačítko Facebook:				 #3b5998
-tlačítko Facebook aktivní: #2b406e
-*/
-
+html {
+    box-sizing: border-box;
+  }
+  *,
+  ::after,
+  ::before {
+    box-sizing: inherit;
+  }
+  
+  html {
+    background-color: #b2bec3;
+    font-family: "Nunito", sans-serif;
+  }
+  /*
+  BARVY:
+  šedá na pozadí stránky:		 #b2bec3
+  červená na hlavní nadpis:  #d63031
+  
+  tlačítko Twitter:					 #1da1f2
+  tlačítko Twitter aktivní:	 #0b7bc1
+  
+  tlačítko Facebook:				 #3b5998
+  tlačítko Facebook aktivní: #2b406e
+  */
+  
+  .main-box {
+    background-color: white;
+    width: 550px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+  
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px #757070;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 4px 4px 13px #aca6a6;
+  }
+  
+  .card-name {
+    font: 18px bold;
+    color: #d63031;
+    position: relative;
+    font-family: "Nunito", sans-serif;
+    margin: 30px;
+  }
+  
+  .paragraph-1 {
+    position: relative;
+    margin: 30px;
+    text-align: justify;
+    font-size: 18px;
+    word-spacing: -0.1em;
+  }
+  
+  .paragraph-2 {
+    position: relative;
+    margin: 30px;
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  .buttons {
+    margin: 30px;
+    border-radius: 5px;
+  }
+  a {
+    color: white;
+    font: 18px bold;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+  }
+  
+  .twitter-button {
+    position: relative;
+    background-color: #1da1f2;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .twitter-button:hover {
+    background-color: #0b7bc1;
+  }
+  
+  .facebook-button {
+    position: relative;
+    background-color: #3b5998;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .facebook-button:hover {
+    background-color: #2b406e;
+  }
+  
